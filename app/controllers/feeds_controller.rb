@@ -48,7 +48,7 @@ class FeedsController < ApplicationController
   end
 
   def reader
-    @posts = Post.all.order('published_at desc')
+    @posts = Post.all_feeds_most_recent_posts
   end
 
   private
