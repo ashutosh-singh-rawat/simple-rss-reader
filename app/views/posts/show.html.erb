@@ -1,0 +1,7 @@
+<div class="container">
+  <h3><%= link_to @post.title, @post.url %></h3>
+  <i>published on <%= @post.published_at %></i>
+  <p>
+    <%= @post.content.html_safe %>
+  </p>
+</div>
